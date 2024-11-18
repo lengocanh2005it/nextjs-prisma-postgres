@@ -1,6 +1,6 @@
 "use server";
 import { revalidatePath } from "next/cache";
-import prisma from "../../db";
+import prisma from "../lib/db";
 
 export async function addTask(formData: FormData) {
   await prisma.task.create({

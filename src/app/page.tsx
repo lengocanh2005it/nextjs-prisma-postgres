@@ -1,5 +1,5 @@
 import React from "react";
-import prisma from "../../db";
+import prisma from "../lib/db";
 import { addTask } from "@/actions/actions";
 
 const Page: React.FC = async () => {
